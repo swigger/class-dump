@@ -444,9 +444,9 @@ static BOOL debugMerge = NO;
                 result = [self blockSignatureString];
             } else {
                 if (currentName == nil)
-                    result = @"CDUnknownBlockType";
+                    result = @"id /* CDUnknownBlockType */";
                 else
-                    result = [NSString stringWithFormat:@"CDUnknownBlockType %@", currentName];
+                    result = [NSString stringWithFormat:@"id /* CDUnknownBlockType %@ */", currentName];
             }
             break;
             
